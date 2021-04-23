@@ -1,0 +1,121 @@
+package routines;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * 
+ * @author v086602 Fabian Simroth
+ *
+ */
+public class FileUtil {
+	public enum DataType {
+		BUSINESS,
+		MOUNT,
+		TEMP
+	}
+
+
+    /**
+     * getPath: calculates the current data path with environment, client, project and data type. The returned path has a slash at the end.
+     * You can find this function in referenced template project: Code/Routines/misc/FileUtil 
+     * See examples!
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(context.ENVIRONMENT_Path) ENVIRONMENT_Path: String containing the BASE_PATH. Use the context-variable ENVIRONMENT_Path available in reference project
+     * {param} string(projectName) projectName: String containing the project name which typically contains the client 'underscore' project name like 'KONZ_DDS'
+     * {param} DataType() type: Type of data: BUSINESS (shared between jobserver (coming soon)), MOUNT (for external NFS mounts) or TEMP for fast local HDD / SSD temporary data access (use for sorts, joins, etc)  
+     * 
+     * {example} FileUtil.getPath(context.ENVIRONMENT_Path, projectName, FileUtil.DataType.BUSINESS) returns for example "/opt/data/talend_D/data/business/gdis/test/"
+     * {example} FileUtil.getPath(context.ENVIRONMENT_Path, projectName, FileUtil.DataType.MOUNT) returns for example "/opt/data/talend_D/data/mount/konz/dds/"
+     * 
+     * {example} For using the function for the errorMap serialized file:
+     *	String path = FileUtil.getPath(context.ENVIRONMENT_Path, projectName, FileUtil.DataType.TEMP);
+	 *	String filename = "EVWS_TJB_DM_" + context.CG04_target_table.toUpperCase() + "_errorMap_" + context.CG04_tec_client + ".ser";
+	 *	context.eMap_filepath = path + filename; 
+     */
+    public static String getPath(String ENVIRONMENT_Path, String projectName, DataType type) throws IOException
+    {
+    	String path = ENVIRONMENT_Path + (!ENVIRONMENT_Path.endsWith("/")?"/":"");
+    	switch (type) {
+		case MOUNT:
+			path += "mounts/";
+			break;
+		case TEMP:
+			path += "tmp/";
+			break;
+		default:
+			path += "business/";
+			break;
+		}
+    	projectName = projectName.toLowerCase();
+    	String mandant = "gdis";
+    	String project = null;
+    	if (projectName.contains("_"))
+    	{
+    		int separator = projectName.indexOf("_");
+    		mandant = projectName.substring(0, separator);
+    		project = projectName.substring(separator + 1);
+    	}
+    	else
+    	{
+    		project = projectName;
+    	}
+    	
+    	// Auch im Temp-Verzeichnis soll die Projektsturktur erhalten bleiben (bessere Nachvollziehbarkeit)
+    	// Lege also das entsprechende Verzeichnis an, falls es noch nicht existiert. Abbruch im Fehlerfall
+    	if (type == DataType.TEMP)
+    	{
+    		File dir = new File(path + mandant + "/" + project + "/");
+    		if (!dir.exists())
+    		{
+    			if (!dir.mkdirs())
+    			{
+    				throw new IOException("Could not create tmp-Directory '" + dir.getAbsolutePath() + "'");
+    			}
+    		}
+    		
+    	}
+    	return path + mandant + "/" + project + "/";
+    }
+    
+    /**
+     * getPath: Short form for getPath
+     * @see getPath()
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(context.ENVIRONMENT_Path) ENVIRONMENT_Path: String containing the BASE_PATH. Use the context-variable ENVIRONMENT_Path available in reference project
+     * {param} string(projectName) projectName: String containing the project name which typically contains the client 'underscore' project name like 'KONZ_DDS'
+     * 
+     * {example} FileUtil.getPath(context.ENVIRONMENT_Path, projectName) returns for example "/opt/data/talend_D/data/business/gdis/test/"
+     */
+    public static String getPath(String ENVIRONMENT_Path, String projectName) throws IOException
+    {
+    	return getPath(ENVIRONMENT_Path, projectName, DataType.BUSINESS);
+    }
+    
+    /**
+     * getKeytabPath: Calculates the directory wich contains all keytab and password-config files
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(context.ENVIRONMENT_Path) ENVIRONMENT_Path: String containing the BASE_PATH. Use the context-variable ENVIRONMENT_Path available in reference project
+     * 
+     * {example} FileUtil.getKeytabPath(context.ENVIRONMENT_Path) returns for example "/opt/data/talend_D/data/../keytab/"
+     */
+    public static String getKeytabPath(String ENVIRONMENT_Path) throws IOException
+    {
+    	String path = ENVIRONMENT_Path + (!ENVIRONMENT_Path.endsWith("/")?"/":"");
+    	return path + "../keytab/";
+    }
+}

@@ -17,6 +17,8 @@
     <module>jobs/process/job1_0.1</module>
     <module>jobs/process/remotete_test_job_0.1</module>
     <module>jobs/process/copy_of_helloworld_0.1</module>
+    <module>jobs/process/zz_Sandbox/zz_Fabian/test_fs_child_0.1</module>
+    <module>jobs/process/zz_Sandbox/zz_Fabian/test_fs_parent_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
