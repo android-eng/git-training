@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="dev" xmi:id="_m5d-MKQUEeuR45F1uNEw0g">
+    <contextParameter comment="" name="TLND_AMC_Schema" prompt="TLND_AMC_Schema?" promptNeeded="false" type="id_String" value="TLND_D_641" xmi:id="_m5d-MaQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Server" prompt="TLND_AMC_Server?" promptNeeded="false" type="id_String" value="adlo401t.generalinet.com" xmi:id="_m5d-MqQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Password" prompt="TLND_AMC_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:FQ1SYstU9t+kXa16zsxlD1mAEv/jdqk/CtTytGCET/e9S0I59v8=" xmi:id="_m5d-M6QUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Port" prompt="TLND_AMC_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_m5d-NKQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Sid" prompt="TLND_AMC_Sid?" promptNeeded="false" type="id_String" value="TTAL" xmi:id="_m5d-NaQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_AdditionalParams" prompt="TLND_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_m5d-NqQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Login" prompt="TLND_AMC_Login?" promptNeeded="false" type="id_String" value="TLND_LOG_SCRIBBLER" xmi:id="_m5d-N6QUEeuR45F1uNEw0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="prod" xmi:id="_m5d-OKQUEeuR45F1uNEw0g">
+    <contextParameter comment="" name="TLND_AMC_Schema" prompt="TLND_AMC_Schema?" promptNeeded="false" type="id_String" value="TLND_P_641" xmi:id="_m5d-OaQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Server" prompt="TLND_AMC_Server?" promptNeeded="false" type="id_String" value="adlo401p.generalinet.com" xmi:id="_m5d-OqQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Password" prompt="TLND_AMC_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:STI9/WniziOxKQ41kbI4jB2JPU3FfB+g+wVvz+xbYlmPwRgMpKA=" xmi:id="_m5d-O6QUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Port" prompt="TLND_AMC_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_m5d-PKQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Sid" prompt="TLND_AMC_Sid?" promptNeeded="false" type="id_String" value="PTAL" xmi:id="_m5d-PaQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_AdditionalParams" prompt="TLND_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_m5d-PqQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Login" prompt="TLND_AMC_Login?" promptNeeded="false" type="id_String" value="TLND_LOG_SCRIBBLER" xmi:id="_m5d-P6QUEeuR45F1uNEw0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="test" xmi:id="_m5d-QKQUEeuR45F1uNEw0g">
+    <contextParameter comment="" name="TLND_AMC_Schema" prompt="TLND_AMC_Schema?" promptNeeded="false" type="id_String" value="TLND_T_641" xmi:id="_m5d-QaQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Server" prompt="TLND_AMC_Server?" promptNeeded="false" type="id_String" value="adlo401t.generalinet.com" xmi:id="_m5d-QqQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Password" prompt="TLND_AMC_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:7NBSqhusVVs4RPs6lEL6daoOOJZB1qd7ZLQGp/68+1QeIkWre30=" xmi:id="_m5d-Q6QUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Port" prompt="TLND_AMC_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_m5d-RKQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Sid" prompt="TLND_AMC_Sid?" promptNeeded="false" type="id_String" value="TTAL" xmi:id="_m5d-RaQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_AdditionalParams" prompt="TLND_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_m5d-RqQUEeuR45F1uNEw0g"/>
+    <contextParameter comment="" name="TLND_AMC_Login" prompt="TLND_AMC_Login?" promptNeeded="false" type="id_String" value="TLND_LOG_SCRIBBLER" xmi:id="_m5d-R6QUEeuR45F1uNEw0g"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dc9146c5-86cd-4e91-9c74-e02c9e129b8f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lu64nsTPS1I5hldCBJI0Ff4pctQiMzrvZobPeQZJGeWFbEr/I0Oa6QygqEKBpFXYCMwqC58Ul6Hh
+4Ji6pylf0Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_05c41b3a-2b9c-4baa-a8be-d0e9a2a0c226"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kKz0tW3bMc4NEGgIBBwEOLHRHSPeZYE6eRc+Ihxxt8su2Gu+BTELO5neX8u/7K3HSNKNP37VDhpX
+kdLT4far5g==</DigestValue></Reference></SignedInfo><SignatureValue>Wr2nTp03npiYb5s5LJvGoK4p3iyhBS3UvMt4+z4V1NsXZvILUdxHJ3AbsMdtgeQKyBKsKfJlY4Fz
+Ftt3bQvN10ki2F2aVvZG0gWxLN6p9XZRoaiykwC5JZpSAorhkixs3t5io8Q9itDJH8SB5X9sd/Zz
+fH7WJ42TjdF3X4ZGjJ5LxxVr6DHpdccO2Hs/+o1tWF9lTUux4A9d7UuoEx1brzxGdUnNCln/75Gi
+pQQYgCpKGptxSM+Fh3QPms0WxXJeIIKrmXje9JhaY/TuwRH+UnbUUJLRlfHK0Xd+VVxibGWGuT6S
+HQnLxzWkIC+8eIuRZCYtKzc+sXckHKmTywZp9Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_05c41b3a-2b9c-4baa-a8be-d0e9a2a0c226" Target="#_dc9146c5-86cd-4e91-9c74-e02c9e129b8f"><Timestamp>2021-04-23 10:16:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
